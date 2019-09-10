@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A162DCD23283A7000968FE7 /* CoreMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A162DCC23283A7000968FE7 /* CoreMLModel.swift */; };
+		9A162DCF23283B8500968FE7 /* ImageClassifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A162DCE23283B8500968FE7 /* ImageClassifier .swift */; };
+		9A162DD323283F3100968FE7 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9A162DD223283F3100968FE7 /* Inceptionv3.mlmodel */; };
 		FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73346232834BB000E6100 /* AppDelegate.swift */; };
 		FCE73349232834BB000E6100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73348232834BB000E6100 /* ViewController.swift */; };
 		FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCE7334D232834BB000E6100 /* DataSetsTests.xcdatamodeld */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A162DCC23283A7000968FE7 /* CoreMLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLModel.swift; sourceTree = "<group>"; };
+		9A162DCE23283B8500968FE7 /* ImageClassifier .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageClassifier .swift"; sourceTree = SOURCE_ROOT; };
+		9A162DD223283F3100968FE7 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		FCE73343232834BB000E6100 /* DataSetsTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSetsTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE73346232834BB000E6100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE73348232834BB000E6100 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,9 +62,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A162DC92328398700968FE7 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				9A162DCC23283A7000968FE7 /* CoreMLModel.swift */,
+			);
+			name = Enum;
+			sourceTree = "<group>";
+		};
 		FCE7333A232834BB000E6100 = {
 			isa = PBXGroup;
 			children = (
+				9A162DC92328398700968FE7 /* Enum */,
 				FCE7336D23283652000E6100 /* Extensions */,
 				FCE7336C2328364B000E6100 /* Protocols */,
 				FCE7336B23283642000E6100 /* Controllers */,
@@ -104,6 +119,8 @@
 		FCE733692328362A000E6100 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9A162DD223283F3100968FE7 /* Inceptionv3.mlmodel */,
+				9A162DCE23283B8500968FE7 /* ImageClassifier .swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,8 +254,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE73349232834BB000E6100 /* ViewController.swift in Sources */,
+				9A162DD323283F3100968FE7 /* Inceptionv3.mlmodel in Sources */,
+				9A162DCD23283A7000968FE7 /* CoreMLModel.swift in Sources */,
 				FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */,
 				FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */,
+				9A162DCF23283B8500968FE7 /* ImageClassifier .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JGG8YW8SJU;
+				DEVELOPMENT_TEAM = 6XYJN7S9JQ;
 				INFOPLIST_FILE = DataSetsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JGG8YW8SJU;
+				DEVELOPMENT_TEAM = 6XYJN7S9JQ;
 				INFOPLIST_FILE = DataSetsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
