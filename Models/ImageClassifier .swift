@@ -10,9 +10,8 @@ import Foundation
 import UIKit
 import AVKit
 import Vision
-
+import CoreML
 class ImageClassifier{
-    private let modelClassifier = [ jafee(), jafee()]
     
     /// Funcao para classificar as emoções do usuario com base em um modelo ja treinado
     ///
@@ -20,11 +19,11 @@ class ImageClassifier{
     ///   - image: imagem tirada pelo usuario para analise
     ///   - model: modelo utilizado para analise
     /// - Returns: sentimento identificado pelo modelo
-    func classifier(Image image: UIImage,withModel model: CoreMLModel) -> String? {
+    func classifier(Image image: UIImage,withModel model: MLModel) -> String? {
         var identifier = String()
         
         /// Cria modelo e verifica se ele existe
-        guard let model = try? VNCoreMLModel(for: modelClassifier[model.rawValue].model) else {
+        guard let model = try? VNCoreMLModel(for: model) else {
                 return "Modelo não encontrado, tente novamente com outro"
         }
         /// Verifica a imagem e as possibilidades de acordo com a acuracia, pegando o primeiro pois tem o mais proximo

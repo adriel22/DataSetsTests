@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreML
 
 class ViewController: UIViewController {
+    let classifier = ImageClassifier()
     let customView = HomeView()
     override func loadView() {
         self.view = customView
@@ -35,7 +37,17 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {return}
         customView.image.image = pickedImage
+        let pickerRow = customView.picker.selectedRow(inComponent: 0)
         
+        if let model = CoreMLModel.models[pickerRow] as? MLModel {
+            print("Entrou")
+            if let feeling = classifier.classifier(Image: pickedImage, withModel: model){
+                print("\nSentimento\(feeling)")
+                customView.label.text = feeling
+                
+            }
+            
+        }
         picker.dismiss(animated: true, completion: nil)
     }
 }
