@@ -18,6 +18,8 @@
 		FCE73354232834BF000E6100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE73352232834BF000E6100 /* LaunchScreen.storyboard */; };
 		FCE7335F232834BF000E6100 /* DataSetsTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE7335E232834BF000E6100 /* DataSetsTestsUITests.swift */; };
 		FCE7336F23283B48000E6100 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE7336E23283B48000E6100 /* HomeView.swift */; };
+		FCED4B4923297D1C00F468BE /* FaceExpressionRecognition_Normal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FCED4B4823297D1C00F468BE /* FaceExpressionRecognition_Normal.mlmodel */; };
+		FCED4B4C23297DAF00F468BE /* PickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED4B4B23297DAF00F468BE /* PickerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		FCE7335E232834BF000E6100 /* DataSetsTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetsTestsUITests.swift; sourceTree = "<group>"; };
 		FCE73360232834BF000E6100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCE7336E23283B48000E6100 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FCED4B4823297D1C00F468BE /* FaceExpressionRecognition_Normal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FaceExpressionRecognition_Normal.mlmodel; sourceTree = "<group>"; };
+		FCED4B4B23297DAF00F468BE /* PickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		FCE7333A232834BB000E6100 = {
 			isa = PBXGroup;
 			children = (
+				FCED4B4A23297D8200F468BE /* Delegates */,
 				9AEEF84B232973FA005002D1 /* Enum */,
 				FC3BFB3623296BDC00C7BD44 /* DataSources */,
 				FCE7336D23283652000E6100 /* Extensions */,
@@ -112,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				FCE73346232834BB000E6100 /* AppDelegate.swift */,
-				FCE73348232834BB000E6100 /* ViewController.swift */,
 				FCE73350232834BF000E6100 /* Assets.xcassets */,
 				FCE73352232834BF000E6100 /* LaunchScreen.storyboard */,
 				FCE73355232834BF000E6100 /* Info.plist */,
@@ -135,6 +139,7 @@
 			children = (
 				9AEEF84E23297416005002D1 /* ImageClassifier .swift */,
 				9AEEF84F23297416005002D1 /* jafee.mlmodel */,
+				FCED4B4823297D1C00F468BE /* FaceExpressionRecognition_Normal.mlmodel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		FCE7336B23283642000E6100 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FCE73348232834BB000E6100 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +172,14 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCED4B4A23297D8200F468BE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FCED4B4B23297DAF00F468BE /* PickerDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,12 +284,14 @@
 			files = (
 				9AEEF85123297416005002D1 /* jafee.mlmodel in Sources */,
 				FCE73349232834BB000E6100 /* ViewController.swift in Sources */,
+				FCED4B4C23297DAF00F468BE /* PickerDelegate.swift in Sources */,
 				9AEEF85023297416005002D1 /* ImageClassifier .swift in Sources */,
 				9AEEF84D2329740C005002D1 /* CoreMLModel.swift in Sources */,
 				FC3BFB3823296BF800C7BD44 /* PickerDataSource.swift in Sources */,
 				FCE7336F23283B48000E6100 /* HomeView.swift in Sources */,
 				FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */,
 				FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */,
+				FCED4B4923297D1C00F468BE /* FaceExpressionRecognition_Normal.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

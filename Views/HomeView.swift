@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 class HomeView: UIView {
     private let pickerDataSource = PickerDataSource()
+    private let pickerDelegate = PickerDelegate()
     
     lazy var image: UIImageView = {
        let imageView = UIImageView()
@@ -22,6 +23,7 @@ class HomeView: UIView {
         picker.backgroundColor = UIColor.white
         picker.layer.borderWidth = 0.3
         picker.dataSource = pickerDataSource
+        picker.delegate = pickerDelegate
         
         return picker
     }()

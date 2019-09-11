@@ -15,7 +15,7 @@ class PickerDataSource: NSObject, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 10
+        return CoreMLModel.models.count
     }
     
     
