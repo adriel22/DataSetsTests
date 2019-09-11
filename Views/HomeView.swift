@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 class HomeView: UIView {
+    private let pickerDataSource = PickerDataSource()
+    
     lazy var image: UIImageView = {
        let imageView = UIImageView()
         imageView.backgroundColor = UIColor.red
@@ -19,6 +21,7 @@ class HomeView: UIView {
        let picker = UIPickerView()
         picker.backgroundColor = UIColor.white
         picker.layer.borderWidth = 0.3
+        picker.dataSource = pickerDataSource
         
         return picker
     }()
@@ -70,7 +73,8 @@ class HomeView: UIView {
         label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         label.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
-        picker.heightAnchor.constraint(equalToConstant: 50).isActive = true
+//        picker.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        picker.topAnchor.constraint(equalTo: image.bottomAnchor).isActive = true
         picker.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         picker.bottomAnchor.constraint(equalTo: button.topAnchor,constant: 5).isActive = true
         picker.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
