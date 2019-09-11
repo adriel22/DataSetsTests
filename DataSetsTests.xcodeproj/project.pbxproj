@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3BFB3823296BF800C7BD44 /* PickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BFB3723296BF800C7BD44 /* PickerDataSource.swift */; };
 		FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73346232834BB000E6100 /* AppDelegate.swift */; };
 		FCE73349232834BB000E6100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73348232834BB000E6100 /* ViewController.swift */; };
 		FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCE7334D232834BB000E6100 /* DataSetsTests.xcdatamodeld */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC3BFB3723296BF800C7BD44 /* PickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDataSource.swift; sourceTree = "<group>"; };
 		FCE73343232834BB000E6100 /* DataSetsTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSetsTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE73346232834BB000E6100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE73348232834BB000E6100 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,9 +60,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3BFB3623296BDC00C7BD44 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				FC3BFB3723296BF800C7BD44 /* PickerDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		FCE7333A232834BB000E6100 = {
 			isa = PBXGroup;
 			children = (
+				FC3BFB3623296BDC00C7BD44 /* DataSources */,
 				FCE7336D23283652000E6100 /* Extensions */,
 				FCE7336C2328364B000E6100 /* Protocols */,
 				FCE7336B23283642000E6100 /* Controllers */,
@@ -240,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE73349232834BB000E6100 /* ViewController.swift in Sources */,
+				FC3BFB3823296BF800C7BD44 /* PickerDataSource.swift in Sources */,
 				FCE7336F23283B48000E6100 /* HomeView.swift in Sources */,
 				FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */,
 				FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */,
