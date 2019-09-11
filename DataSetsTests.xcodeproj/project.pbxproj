@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A162DCD23283A7000968FE7 /* CoreMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A162DCC23283A7000968FE7 /* CoreMLModel.swift */; };
-		9A162DCF23283B8500968FE7 /* ImageClassifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A162DCE23283B8500968FE7 /* ImageClassifier .swift */; };
 		9A97A1EA23296475008E5F92 /* jafee.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9A97A1E923296475008E5F92 /* jafee.mlmodel */; };
 		9AEEF84323296C06005002D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEF84223296C06005002D1 /* Assets.xcassets */; };
+		9AEEF848232972F9005002D1 /* ImageClassifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEF847232972F9005002D1 /* ImageClassifier .swift */; };
+		9AEEF84A2329732A005002D1 /* CoreMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEF8492329732A005002D1 /* CoreMLModel.swift */; };
 		FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73346232834BB000E6100 /* AppDelegate.swift */; };
 		FCE73349232834BB000E6100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73348232834BB000E6100 /* ViewController.swift */; };
 		FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCE7334D232834BB000E6100 /* DataSetsTests.xcdatamodeld */; };
@@ -29,10 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9A162DCC23283A7000968FE7 /* CoreMLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLModel.swift; sourceTree = "<group>"; };
-		9A162DCE23283B8500968FE7 /* ImageClassifier .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageClassifier .swift"; sourceTree = SOURCE_ROOT; };
 		9A97A1E923296475008E5F92 /* jafee.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = jafee.mlmodel; sourceTree = "<group>"; };
 		9AEEF84223296C06005002D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AEEF847232972F9005002D1 /* ImageClassifier .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageClassifier .swift"; sourceTree = "<group>"; };
+		9AEEF8492329732A005002D1 /* CoreMLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreMLModel.swift; path = Enum/CoreMLModel.swift; sourceTree = "<group>"; };
 		FCE73343232834BB000E6100 /* DataSetsTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSetsTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE73346232834BB000E6100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE73348232834BB000E6100 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		9A162DC92328398700968FE7 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				9A162DCC23283A7000968FE7 /* CoreMLModel.swift */,
+				9AEEF8492329732A005002D1 /* CoreMLModel.swift */,
 			);
 			name = Enum;
 			sourceTree = "<group>";
@@ -119,8 +119,8 @@
 		FCE733692328362A000E6100 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9AEEF847232972F9005002D1 /* ImageClassifier .swift */,
 				9A97A1E923296475008E5F92 /* jafee.mlmodel */,
-				9A162DCE23283B8500968FE7 /* ImageClassifier .swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,11 +254,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE73349232834BB000E6100 /* ViewController.swift in Sources */,
-				9A162DCD23283A7000968FE7 /* CoreMLModel.swift in Sources */,
+				9AEEF848232972F9005002D1 /* ImageClassifier .swift in Sources */,
+				9AEEF84A2329732A005002D1 /* CoreMLModel.swift in Sources */,
 				FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */,
 				FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */,
 				9A97A1EA23296475008E5F92 /* jafee.mlmodel in Sources */,
-				9A162DCF23283B8500968FE7 /* ImageClassifier .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
