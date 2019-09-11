@@ -31,6 +31,7 @@ class HomeView: UIView {
     lazy var label: UILabel = {
         let label = UILabel()
         label.backgroundColor = UIColor.white
+        label.textAlignment = .center
         return label
     }()
     

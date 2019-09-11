@@ -11,6 +11,9 @@
 		9AEEF85023297416005002D1 /* ImageClassifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEF84E23297416005002D1 /* ImageClassifier .swift */; };
 		9AEEF85123297416005002D1 /* jafee.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEF84F23297416005002D1 /* jafee.mlmodel */; };
 		FC3BFB3823296BF800C7BD44 /* PickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BFB3723296BF800C7BD44 /* PickerDataSource.swift */; };
+		FC7D2CFD232987B000959876 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D2CFC232987B000959876 /* Model.swift */; };
+		FC7D2CFF232987F600959876 /* jafeeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D2CFE232987F600959876 /* jafeeExtension.swift */; };
+		FC7D2D012329882700959876 /* FaceExpressionRecognition_NormalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D2D002329882700959876 /* FaceExpressionRecognition_NormalExtension.swift */; };
 		FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73346232834BB000E6100 /* AppDelegate.swift */; };
 		FCE73349232834BB000E6100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73348232834BB000E6100 /* ViewController.swift */; };
 		FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCE7334D232834BB000E6100 /* DataSetsTests.xcdatamodeld */; };
@@ -37,6 +40,9 @@
 		9AEEF84E23297416005002D1 /* ImageClassifier .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageClassifier .swift"; sourceTree = "<group>"; };
 		9AEEF84F23297416005002D1 /* jafee.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = jafee.mlmodel; sourceTree = "<group>"; };
 		FC3BFB3723296BF800C7BD44 /* PickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDataSource.swift; sourceTree = "<group>"; };
+		FC7D2CFC232987B000959876 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FC7D2CFE232987F600959876 /* jafeeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jafeeExtension.swift; sourceTree = "<group>"; };
+		FC7D2D002329882700959876 /* FaceExpressionRecognition_NormalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceExpressionRecognition_NormalExtension.swift; sourceTree = "<group>"; };
 		FCE73343232834BB000E6100 /* DataSetsTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSetsTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE73346232834BB000E6100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE73348232834BB000E6100 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 		FCE7336C2328364B000E6100 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FC7D2CFC232987B000959876 /* Model.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -170,6 +177,8 @@
 		FCE7336D23283652000E6100 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FC7D2CFE232987F600959876 /* jafeeExtension.swift */,
+				FC7D2D002329882700959876 /* FaceExpressionRecognition_NormalExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,8 +299,11 @@
 				FC3BFB3823296BF800C7BD44 /* PickerDataSource.swift in Sources */,
 				FCE7336F23283B48000E6100 /* HomeView.swift in Sources */,
 				FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */,
+				FC7D2CFD232987B000959876 /* Model.swift in Sources */,
 				FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */,
+				FC7D2D012329882700959876 /* FaceExpressionRecognition_NormalExtension.swift in Sources */,
 				FCED4B4923297D1C00F468BE /* FaceExpressionRecognition_Normal.mlmodel in Sources */,
+				FC7D2CFF232987F600959876 /* jafeeExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

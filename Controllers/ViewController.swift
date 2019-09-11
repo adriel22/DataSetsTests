@@ -39,15 +39,15 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         customView.image.image = pickedImage
         let pickerRow = customView.picker.selectedRow(inComponent: 0)
         
-        if let model = CoreMLModel.models[pickerRow] as? MLModel {
-            print("Entrou")
-            if let feeling = classifier.classifier(Image: pickedImage, withModel: model){
-                print("\nSentimento\(feeling)")
-                customView.label.text = feeling
-                
-            }
+        let model = CoreMLModel.models[pickerRow].model
+        print("Entrou")
+        if let feeling = classifier.classifier(Image: pickedImage, withModel: model){
+            print("\nSentimento\(feeling)")
+            customView.label.text = feeling
             
         }
+            
+        
         picker.dismiss(animated: true, completion: nil)
     }
 }

@@ -12,5 +12,5 @@ enum CoreMLModel:Int {
     case jaffe = 0
     case faceExpressionRecognition = 1
     
-    static var models: [Any] = [jafee(), FaceExpressionRecognition_Normal()]
+    static var models: [Model] = [jafee(), FaceExpressionRecognition_Normal()]
 }
