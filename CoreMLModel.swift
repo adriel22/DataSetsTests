@@ -9,6 +9,6 @@
 import Foundation
 
 enum CoreMLModel:Int {
-    case jaffe = 1
-    case faceExpressionRecognition = 2
+    case jaffe = 0
+    case faceExpressionRecognition = 1
 }
