@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AEEF84D2329740C005002D1 /* CoreMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEF84C2329740C005002D1 /* CoreMLModel.swift */; };
+		9AEEF85023297416005002D1 /* ImageClassifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEF84E23297416005002D1 /* ImageClassifier .swift */; };
+		9AEEF85123297416005002D1 /* jafee.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEF84F23297416005002D1 /* jafee.mlmodel */; };
 		FC3BFB3823296BF800C7BD44 /* PickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BFB3723296BF800C7BD44 /* PickerDataSource.swift */; };
 		FCE73347232834BB000E6100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73346232834BB000E6100 /* AppDelegate.swift */; };
 		FCE73349232834BB000E6100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE73348232834BB000E6100 /* ViewController.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AEEF84C2329740C005002D1 /* CoreMLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreMLModel.swift; path = Enum/CoreMLModel.swift; sourceTree = SOURCE_ROOT; };
+		9AEEF84E23297416005002D1 /* ImageClassifier .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageClassifier .swift"; sourceTree = "<group>"; };
+		9AEEF84F23297416005002D1 /* jafee.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = jafee.mlmodel; sourceTree = "<group>"; };
 		FC3BFB3723296BF800C7BD44 /* PickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDataSource.swift; sourceTree = "<group>"; };
 		FCE73343232834BB000E6100 /* DataSetsTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSetsTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE73346232834BB000E6100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AEEF84B232973FA005002D1 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEF84C2329740C005002D1 /* CoreMLModel.swift */,
+			);
+			name = Enum;
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		FC3BFB3623296BDC00C7BD44 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +86,7 @@
 		FCE7333A232834BB000E6100 = {
 			isa = PBXGroup;
 			children = (
+				9AEEF84B232973FA005002D1 /* Enum */,
 				FC3BFB3623296BDC00C7BD44 /* DataSources */,
 				FCE7336D23283652000E6100 /* Extensions */,
 				FCE7336C2328364B000E6100 /* Protocols */,
@@ -117,6 +133,8 @@
 		FCE733692328362A000E6100 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9AEEF84E23297416005002D1 /* ImageClassifier .swift */,
+				9AEEF84F23297416005002D1 /* jafee.mlmodel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AEEF85123297416005002D1 /* jafee.mlmodel in Sources */,
 				FCE73349232834BB000E6100 /* ViewController.swift in Sources */,
+				9AEEF85023297416005002D1 /* ImageClassifier .swift in Sources */,
+				9AEEF84D2329740C005002D1 /* CoreMLModel.swift in Sources */,
 				FC3BFB3823296BF800C7BD44 /* PickerDataSource.swift in Sources */,
 				FCE7336F23283B48000E6100 /* HomeView.swift in Sources */,
 				FCE7334F232834BB000E6100 /* DataSetsTests.xcdatamodeld in Sources */,
